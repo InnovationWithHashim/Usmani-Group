@@ -1,0 +1,103 @@
+.testimonials-slider {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c); /* Dark gradient background */
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .testimonials-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #b69a36; /* Gold color for emphasis */
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+  }
+  
+  .slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .testimonial-card {
+    flex: 0 0 100%;
+    background: #2c2c2c; /* Dark card background */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #b69a36; /* Gold border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+  .testimonial-card.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .rating {
+    font-size: 1.5rem;
+    color: #ffd700; /* Gold color for stars */
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #e0e0e0; /* Light gray for text */
+  }
+  
+  .client-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #b69a36; /* Gold color for client name */
+    margin-top: 10px;
+  }
+  
+  .slider-arrow {
+    background: transparent;
+    border: none;
+    color: #b69a36; /* Gold color for arrows */
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.3s ease;
+  }
+  
+  .slider-arrow:hover {
+    color: #ffd700; /* Brighter gold on hover */
+  }
+  
+  .left-arrow {
+    left: -50px;
+  }
+  
+  .right-arrow {
+    right: -50px;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

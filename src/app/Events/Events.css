@@ -1,0 +1,300 @@
+/* General Styles */
+.servicesPage {
+    background-color: black;
+    color: white;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.serviceCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(182, 154, 54, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.serviceCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(182, 154, 54, 0.5);
+}
+
+.serviceImage {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(30%);
+    transition: filter 0.3s ease;
+}
+
+.serviceCard:hover .cardImage {
+    filter: grayscale(0%);
+}
+
+.serviceContent {
+    padding: 40px;
+    text-align: left;
+    width: 100%;
+}
+
+.serviceContent h2 {
+    font-size: 2.75rem;
+    color: #b69a36;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.serviceContent p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+}
+
+.serviceContent h3 {
+    font-size: 2rem;
+    color: #b69a36;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.serviceContent ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.serviceContent ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    color: #e0e0e0;
+}
+
+.additionalDetails {
+    margin-top: 30px;
+}
+
+.additionalDetails h4 {
+    font-size: 1.75rem;
+    color: #b69a36;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.additionalDetails ol {
+    list-style-type: decimal;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.additionalDetails ol li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    color: #e0e0e0;
+}
+
+.testimonials {
+    margin-top: 30px;
+}
+
+.testimonials blockquote {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    border-left: 4px solid #b69a36;
+    padding-left: 20px;
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #b69a36;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.readMoreButton {
+    background-color: #b69a36;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 25px;
+}
+
+.readMoreButton:hover {
+    background-color: #d4b24a;
+    transform: scale(1.05);
+}
+
+/* Extra large devices (large desktops, < 1200px) */
+@media (max-width: 1200px) {
+    .servicesPage {
+        padding: 80px 30px;
+    }
+
+    .serviceCard {
+        margin-bottom: 40px;
+    }
+
+    .serviceImage {
+        height: 500px;
+    }
+
+    .serviceContent {
+        padding: 40px;
+    }
+
+    .serviceContent h2 {
+        font-size: 3rem;
+        margin-bottom: 35px;
+    }
+
+    .serviceContent p {
+        font-size: 1.25rem;
+        margin-bottom: 35px;
+    }
+}
+
+/* Large devices (laptops and desktops, < 1024px) */
+@media (max-width: 1024px) {
+    .servicesPage {
+        padding: 70px 25px;
+    }
+
+    .serviceCard {
+        margin-bottom: 40px;
+    }
+
+    .serviceImage {
+        height: 450px;
+    }
+
+    .serviceContent {
+        padding: 35px;
+    }
+
+    .serviceContent h2 {
+        font-size: 2.75rem;
+        margin-bottom: 30px;
+    }
+
+    .serviceContent p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+}
+
+/* Medium devices (larger tablets and smaller laptops, < 768px) */
+@media (max-width: 768px) {
+    .servicesPage {
+        padding: 60px 20px;
+    }
+
+    .serviceCard {
+        margin-bottom: 35px;
+    }
+
+    .serviceImage {
+        height: 400px;
+    }
+
+    .serviceContent {
+        padding: 30px;
+    }
+
+    .serviceContent h2 {
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+
+    .serviceContent p {
+        font-size: 1.15rem;
+        margin-bottom: 25px;
+    }
+}
+
+/* Small devices (tablets, < 600px) */
+@media (max-width: 600px) {
+    .servicesPage {
+        padding: 50px 15px;
+    }
+
+    .serviceCard {
+        margin-bottom: 30px;
+    }
+
+    .serviceImage {
+        height: 350px;
+    }
+
+    .serviceContent {
+        padding: 25px;
+    }
+
+    .serviceContent h2 {
+        font-size: 2.25rem;
+        margin-bottom: 20px;
+    }
+
+    .serviceContent p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+}
+
+/* Extra small devices (mobile phones, < 480px) */
+@media (max-width: 480px) {
+    .servicesPage {
+        padding: 40px 10px;
+    }
+
+    .serviceCard {
+        margin-bottom: 20px;
+    }
+
+    .serviceImage {
+        height: 200px;
+    }
+
+    .cardImage {
+        height: 200px;
+    }
+
+    .serviceContent {
+        padding: 20px;
+    }
+
+    .serviceContent h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .serviceContent p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+}

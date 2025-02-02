@@ -1,0 +1,254 @@
+/* General Footer Styling */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  border-top: 3px solid #B69A36; 
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px 20px;
+}
+
+.footer-section h3 {
+  color: #b69a36;
+  font-size: 18px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #b69a36, transparent);
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #b69a36;
+}
+
+/* Social Links Styling */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #b69a36;
+  transform: translateY(-3px);
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #b69a36;
+}
+
+.footer-bottom .disclaimer {
+  font-size: 12px;
+  color: #b69a36;
+  margin-bottom: 10px;
+}
+
+.footer-bottom .copyright {
+  font-size: 14px;
+  color: white;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #b69a36;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #a5882e;
+  transform: translateY(-5px);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Extra small devices (mobile phones, < 480px) */
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .footer-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .back-to-top {
+    bottom: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Small devices (tablets, < 600px) */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .footer-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .back-to-top {
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Medium devices (larger tablets and smaller laptops, < 768px) */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .footer-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Large devices (laptops and desktops, < 1024px) */
+@media (max-width: 1024px) {
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer-section {
+    flex: 1 1 45%;
+    margin: 10px;
+  }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Extra large devices (large desktops, < 1200px) */
+@media (max-width: 1200px) {
+  .footer-content {
+    max-width: 1000px;
+  }
+
+  .footer-section {
+    flex: 1 1 30%;
+    margin: 10px;
+  }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}

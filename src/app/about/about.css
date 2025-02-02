@@ -1,0 +1,261 @@
+/* General Styles */
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  margin: 0;
+  padding: 0;
+}
+
+.about-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #b69a36; /* Gold color */
+  font-weight: 700;
+}
+
+/* Introduction Section */
+.introduction {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.intro-content {
+  flex: 1;
+}
+
+.intro-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.intro-image {
+  flex: 1;
+}
+
+.intro-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(182, 154, 54, 0.3); /* Gold shadow */
+}
+
+/* Core Values Section */
+.core-values {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.core-values h2 {
+  font-size: 2.5rem;
+  color: #b69a36;
+  margin-bottom: 40px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  background-color: #1a1a1a; /* Dark gray */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(182, 154, 54, 0.3);
+}
+
+.value-card h3 {
+  color: #b69a36;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Meet the Team Section */
+.meet-the-team {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.meet-the-team h2 {
+  font-size: 2.5rem;
+  color: #b69a36;
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.team-member {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(182, 154, 54, 0.3);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  color: #b69a36;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Location Section */
+.location {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.location h2 {
+  font-size: 2.5rem;
+  color: #b69a36;
+  margin-bottom: 20px;
+}
+
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(182, 154, 54, 0.3);
+}
+
+/* Media Queries */
+
+/* Extra large devices (large desktops, < 1200px) */
+@media (max-width: 1200px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .introduction {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large devices (laptops and desktops, < 1024px) */
+@media (max-width: 1024px) {
+  .header h1 {
+    font-size: 2.8rem;
+  }
+
+  .introduction {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Medium devices (larger tablets and smaller laptops, < 768px) */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .introduction {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small devices (tablets, < 600px) */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .introduction {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Extra small devices (mobile phones, < 480px) */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .introduction {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .intro-content p {
+    font-size: 1rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+}
