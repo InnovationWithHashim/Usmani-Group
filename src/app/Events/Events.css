@@ -289,12 +289,28 @@
     }
 
     .serviceContent h2 {
-        font-size: 2rem;
+        font-size: 1.4rem;
         margin-bottom: 15px;
+    }
+    .serviceContent h3{
+        font-size: 1rem;
+    }
+    .serviceContent ul li{
+        font-size: 0.7rem;
     }
 
     .serviceContent p {
-        font-size: 1rem;
+        font-size: .7rem;
         margin-bottom: 15px;
+    }
+    .readMoreButton{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .additionalDetails h4{
+        font-size: 1rem;
+    }
+    .additionalDetails ol li{
+        font-size: 0.7rem;
     }
 }

@@ -243,13 +243,58 @@
 
 /* Media Queries for Responsiveness */
 
-/* Extra small devices (mobile phones, < 480px) */
-@media (max-width: 480px) {
+/* Extra large devices (large desktops, < 1200px) */
+@media (max-width: 1200px) {
     .hero-section {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        gap: 10px;
     }
 
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .package-card {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .package-image {
+        max-width: 80%;
+    }
+
+    .why-choose-us-images {
+        flex-direction: row;
+    }
+
+    .process-steps {
+        flex-direction: row;
+    }
+
+    .faq-section {
+        flex-direction: row;
+    }
+
+    .cta-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .cta-section p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Large devices (laptops and desktops, < 1024px) */
+@media (max-width: 1024px) {
     .hero-content h1 {
         font-size: 2rem;
     }
@@ -258,88 +303,17 @@
         font-size: 1rem;
     }
 
-    .package-card {
-        flex-direction: column;
-        gap: 20px;
-    }
-
     .package-image {
-        max-width: 100%;
-    }
-
-    .why-choose-us-images {
-        flex-direction: column;
-    }
-
-    .process-steps {
-        flex-direction: column;
-    }
-
-    .faq-section {
-        flex-direction: column;
+        max-width: 85%;
     }
 
     .cta-section h2 {
         font-size: 1.5rem;
     }
 
-    .cta-section p {
-        font-size: 1rem;
-    }
-
     .cta-button {
         font-size: 1rem;
-        padding: 10px 20px;
-    }
-}
-
-/* Small devices (tablets, < 600px) */
-@media (max-width: 600px) {
-    .hero-section {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .package-card {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .package-image {
-        max-width: 100%;
-    }
-
-    .why-choose-us-images {
-        flex-direction: column;
-    }
-
-    .process-steps {
-        flex-direction: column;
-    }
-
-    .faq-section {
-        flex-direction: column;
-    }
-
-    .cta-section h2 {
-        font-size: 1.6rem;
-    }
-
-    .cta-section p {
-        font-size: 1rem;
-    }
-
-    .cta-button {
-        font-size: 1rem;
-        padding: 10px 20px;
+        padding: 10px 18px;
     }
 }
 
@@ -347,7 +321,7 @@
 @media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
     }
 
     .hero-content h1 {
@@ -355,16 +329,16 @@
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .package-card {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
     }
 
     .package-image {
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .why-choose-us-images {
@@ -384,111 +358,74 @@
     }
 
     .cta-section p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .cta-button {
-        font-size: 1rem;
-        padding: 10px 20px;
+        font-size: 1.1rem;
+        padding: 12px 22px;
     }
 }
 
-/* Large devices (laptops and desktops, < 1024px) */
-@media (max-width: 1024px) {
-    .hero-section {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 2.4rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .package-card {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .package-image {
-        max-width: 100%;
-    }
-
-    .why-choose-us-images {
-        flex-direction: column;
-    }
-
-    .process-steps {
-        flex-direction: column;
-    }
-
-    .faq-section {
-        flex-direction: column;
-    }
-
-    .cta-section h2 {
-        font-size: 1.8rem;
-    }
-
-    .cta-section p {
-        font-size: 1rem;
-    }
-
-    .cta-button {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-}
-
-/* Extra large devices (large desktops, < 1200px) */
-@media (max-width: 1200px) {
-    .hero-section {
-        flex-direction: column;
-        gap: 20px;
-    }
-
+/* Small devices (tablets, < 600px) */
+@media (max-width: 600px) {
     .hero-content h1 {
         font-size: 2.5rem;
     }
 
     .hero-content p {
-        font-size: 1rem;
-    }
-
-    .package-card {
-        flex-direction: column;
-        gap: 20px;
+        font-size: 1.2rem;
     }
 
     .package-image {
-        max-width: 100%;
-    }
-
-    .why-choose-us-images {
-        flex-direction: column;
-    }
-
-    .process-steps {
-        flex-direction: column;
-    }
-
-    .faq-section {
-        flex-direction: column;
+        max-width: 95%;
     }
 
     .cta-section h2 {
         font-size: 1.8rem;
     }
 
-    .cta-section p {
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 14px 24px;
+    }
+}
+
+/* Extra small devices (mobile phones, < 480px) */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
         font-size: 1rem;
     }
 
+    .package-image {
+        max-width: 100%;
+    }
+
+    .cta-section h2 {
+        font-size: 1.6rem;
+    }
+
     .cta-button {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 10px 20px;
+    }
+    .additional-details h2{
+        font-size: 1.6rem;
+    }
+    .additional-details h3{
+        font-size: 1.2rem;
+    }
+    .main-content h2{
+        font-size: 1.6rem;
+    }
+    .package-details h3{
+        font-size: 1.2rem;
+    }
+    .why-choose-us-img{
+        height: 60%;
     }
 }

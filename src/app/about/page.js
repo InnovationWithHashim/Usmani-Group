@@ -25,32 +25,32 @@ const AboutUs = () => {
 
   const teamMembers = [
     {
-      image: "/images/t6.jpg",
+      image: "/images/pic.jpg",
       name: "ZEESHAN USMANI",
       role: "CEO & Founder",
     },
     {
-      image: "/images/t1.jpg",
+      image: "/images/pic.jpg",
       name: "Muhammad HASHIM KHAN",
       role: "CO-Founder",
     },
     {
-      image: "/images/t4.jpg",
+      image: "/images/pic.jpg",
       name: "SARDAR Muhammad USMAN",
       role: "Senior Consultant",
     },
     {
-      image: "/images/t3.jpg",
+      image: "/images/pic.jpg",
       name: "SHAHEER AHMED",
       role: "Logistics & Production Manager",
     },
     {
-      image: "/images/t2.jpg",
+      image: "/images/pic.jpg",
       name: "Umer Raza Shah",
       role: "Creative Director",
     },
     {
-      image: "/images/t5.jpg",
+      image: "/images/pic.jpg",
       name: "Zain Awan",
       role: "Marketing Manager",
     },

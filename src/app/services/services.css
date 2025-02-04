@@ -150,10 +150,10 @@
 
 /* Media Queries for Responsiveness */
 
-/* Extra small devices (mobile phones, < 480px) */
-@media (max-width: 480px) {
+/* Extra large devices (large desktops, < 1200px) */
+@media (max-width: 1200px) {
     .headline-section h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .headline-section p {
@@ -165,7 +165,7 @@
     }
 
     .service-content h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .service-content p {
@@ -186,97 +186,7 @@
     }
 
     .cta-section h2 {
-        font-size: 1.5rem;
-    }
-
-    .cta-button {
-        font-size: 1rem;
-        padding: 8px 16px;
-    }
-}
-
-/* Small devices (tablets, < 600px) */
-@media (max-width: 600px) {
-    .headline-section h1 {
-        font-size: 2.2rem;
-    }
-
-    .headline-section p {
-        font-size: 1rem;
-    }
-
-    .service-card {
-        margin-bottom: 15px;
-    }
-
-    .service-content h2 {
-        font-size: 1.6rem;
-    }
-
-    .service-content p {
-        font-size: 0.9rem;
-    }
-
-    .service-content h3 {
-        font-size: 1.1rem;
-    }
-
-    .service-content li {
-        font-size: 0.8rem;
-    }
-
-    .read-more-button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
-
-    .cta-section h2 {
-        font-size: 1.6rem;
-    }
-
-    .cta-button {
-        font-size: 1rem;
-        padding: 8px 16px;
-    }
-}
-
-/* Medium devices (larger tablets and smaller laptops, < 768px) */
-@media (max-width: 768px) {
-    .headline-section h1 {
-        font-size: 2.3rem;
-    }
-
-    .headline-section p {
-        font-size: 1rem;
-    }
-
-    .service-card {
-        margin-bottom: 15px;
-    }
-
-    .service-content h2 {
-        font-size: 1.7rem;
-    }
-
-    .service-content p {
-        font-size: 0.9rem;
-    }
-
-    .service-content h3 {
-        font-size: 1.1rem;
-    }
-
-    .service-content li {
-        font-size: 0.8rem;
-    }
-
-    .read-more-button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
-
-    .cta-section h2 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 
     .cta-button {
@@ -330,10 +240,10 @@
     }
 }
 
-/* Extra large devices (large desktops, < 1200px) */
-@media (max-width: 1200px) {
+/* Medium devices (larger tablets and smaller laptops, < 768px) */
+@media (max-width: 768px) {
     .headline-section h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .headline-section p {
@@ -345,7 +255,7 @@
     }
 
     .service-content h2 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .service-content p {
@@ -366,7 +276,97 @@
     }
 
     .cta-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Small devices (tablets, < 600px) */
+@media (max-width: 600px) {
+    .headline-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .headline-section p {
+        font-size: 1rem;
+    }
+
+    .service-card {
+        margin-bottom: 15px;
+    }
+
+    .service-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .service-content p {
+        font-size: 0.9rem;
+    }
+
+    .service-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .service-content li {
+        font-size: 0.8rem;
+    }
+
+    .read-more-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .cta-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Extra small devices (mobile phones, < 480px) */
+@media (max-width: 480px) {
+    .headline-section h1 {
         font-size: 1.8rem;
+    }
+
+    .headline-section p {
+        font-size: 1rem;
+    }
+
+    .service-card {
+        margin-bottom: 15px;
+    }
+
+    .service-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-content p {
+        font-size: 0.9rem;
+    }
+
+    .service-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .service-content li {
+        font-size: 0.8rem;
+    }
+
+    .read-more-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .cta-section h2 {
+        font-size: 1.5rem;
     }
 
     .cta-button {

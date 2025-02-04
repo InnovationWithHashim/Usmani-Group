@@ -154,6 +154,16 @@
   
   /* Mobile and Tablet Media Queries */
   @media (max-width: 768px) {
+    .navbar h1{
+      font-size: 1.4rem;
+    }
+    .navbar-logo img{
+      height: 60px;
+      width: 60px;
+    }
+    .navbar span{
+      font-size: .8rem;
+    }
     .navbar-section {
       padding: 10px;
       flex-direction: column;
@@ -188,6 +198,7 @@
   
     .navbar-hamburger {
       display: flex;
+      margin-right: 10px;
       justify-content: end;
       align-items: center;
       cursor: pointer;

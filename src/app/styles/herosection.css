@@ -532,22 +532,24 @@
   }
   
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .hero-content h2 {
-    font-size: 1.4rem;
+    font-size: 1;
   }
   .hero-content span{
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .hero-content p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .link-cards {
     margin-top: 10px;
+    display: flex;
+    flex-direction:column;
   }
   .link-card{
     padding: 10px;

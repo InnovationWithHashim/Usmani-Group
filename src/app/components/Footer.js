@@ -49,7 +49,7 @@ const Footer = () => {
           <h3>Follow Us</h3>
           <ul className="social-links">
             <li>
-              <a href="https://facebook.com" aria-label="Facebook">
+              <a href="https://www.facebook.com/share/1KKLmtQ9xp/?mibextid=wwXIfr" aria-label="Facebook">
                 <FaFacebook />
               </a>
             </li>
