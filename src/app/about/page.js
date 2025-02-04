@@ -1,10 +1,61 @@
 "use client"; // Ensures it's a Client Component
-import Image from 'next/image';
-import '@/app/about/about.css';
-import React from 'react';
-import { FaMapMarkerAlt, FaUsers, FaHandshake, FaStar } from 'react-icons/fa'; 
+import Image from "next/image";
+import "@/app/about/about.css";
+import React from "react";
+import { FaMapMarkerAlt, FaUsers, FaHandshake, FaStar } from "react-icons/fa";
 
 const AboutUs = () => {
+  const coreValues = [
+    {
+      icon: <FaStar />,
+      title: "Customer Satisfaction",
+      description: "We prioritize your needs above all.",
+    },
+    {
+      icon: <FaHandshake />,
+      title: "Excellence in Service",
+      description: "We go the extra mile to deliver unmatched quality.",
+    },
+    {
+      icon: <FaUsers />,
+      title: "Integrity and Trust",
+      description: "Honesty and reliability are at the heart of our work.",
+    },
+  ];
+
+  const teamMembers = [
+    {
+      image: "/images/t6.jpg",
+      name: "ZEESHAN USMANI",
+      role: "CEO & Founder",
+    },
+    {
+      image: "/images/t1.jpg",
+      name: "Muhammad HASHIM KHAN",
+      role: "CO-Founder",
+    },
+    {
+      image: "/images/t4.jpg",
+      name: "SARDAR Muhammad USMAN",
+      role: "Senior Consultant",
+    },
+    {
+      image: "/images/t3.jpg",
+      name: "SHAHEER AHMED",
+      role: "Logistics & Production Manager",
+    },
+    {
+      image: "/images/t2.jpg",
+      name: "Umer Raza Shah",
+      role: "Creative Director",
+    },
+    {
+      image: "/images/t5.jpg",
+      name: "Zain Awan",
+      role: "Marketing Manager",
+    },
+  ];
+
   return (
     <div className="about-us-container">
       {/* Header Section */}
@@ -16,11 +67,20 @@ const AboutUs = () => {
       <section className="introduction">
         <div className="intro-content">
           <p>
-            Usmani Group was founded with a vision to provide premium services in Abroad Consultancy, Umrah Travel, and Event Management. Over the years, we have earned the trust of countless clients through our professionalism and commitment to excellence.
+            Usmani Group was founded with a vision to provide premium services in
+            Abroad Consultancy, Umrah Travel, and Event Management. Over the
+            years, we have earned the trust of countless clients through our
+            professionalism and commitment to excellence.
           </p>
         </div>
         <div className="intro-image">
-          <img src="/images/about1.jpg" alt="Our Logo" />
+          <Image
+            src="/images/about1.jpg"
+            alt="Our Team"
+            width={500}
+            height={300}
+            priority // Ensures the image loads first
+          />
         </div>
       </section>
 
@@ -28,18 +88,13 @@ const AboutUs = () => {
       <section className="core-values">
         <h2>Our Core Values</h2>
         <div className="values-grid">
-          <div className="value-card">
-            <h3>Customer Satisfaction</h3>
-            <p>We prioritize your needs above all.</p>
-          </div>
-          <div className="value-card">
-            <h3>Excellence in Service</h3>
-            <p>We go the extra mile to deliver unmatched quality.</p>
-          </div>
-          <div className="value-card">
-            <h3>Integrity and Trust</h3>
-            <p>Honesty and reliability are at the heart of our work.</p>
-          </div>
+          {coreValues.map((value, index) => (
+            <div className="value-card" key={index}>
+              <div className="value-icon">{value.icon}</div>
+              <h3>{value.title}</h3>
+              <p>{value.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -47,36 +102,19 @@ const AboutUs = () => {
       <section className="meet-the-team">
         <h2>Meet the Team</h2>
         <div className="team-grid">
-          <div className="team-member">
-            <img src="/images/t6.jpg" alt="Team Member 1" />
-            <h3>ZEESHAN USMANI</h3>
-            <p>CEO & Founder</p>
-          </div>
-          <div className="team-member">
-            <img src="/images/t1.jpg" alt="Team Member 2" />
-            <h3>Muhammad HASHIM KHAN</h3>
-            <p>CO-Founder</p>
-          </div>
-          <div className="team-member">
-            <img src="/images/t4.jpg" alt="Team Member 3" />
-            <h3>SARDAR Muhammad USMAN</h3>
-            <p>Senior Consultant</p>
-          </div>
-          <div className="team-member">
-            <img src="/images/t3.jpg" alt="Team Member 2" />
-            <h3>SHAHEER AHMED</h3>
-            <p>Logistics & Production Manager</p>
-          </div>
-          <div className="team-member">
-            <img src="/images/t2.jpg" alt="Team Member 3" />
-            <h3>Umer Raza Shah</h3>
-            <p>Creative Director</p>
-          </div>
-          <div className="team-member">
-            <img src="/images/t5.jpg" alt="Team Member 3" />
-            <h3>Zain Awan</h3>
-            <p>Marketing Manager</p>
-          </div>
+          {teamMembers.map((member, index) => (
+            <div className="team-member" key={index}>
+              <Image
+                src={member.image}
+                alt={member.name}
+                width={200}
+                height={200}
+                className="team-member-image"
+              />
+              <h3>{member.name}</h3>
+              <p>{member.role}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -89,14 +127,14 @@ const AboutUs = () => {
             width="100%"
             height="400"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen
             loading="lazy"
+            aria-label="Google Maps location of Usmani Group"
           ></iframe>
         </div>
       </section>
     </div>
   );
 };
-
 
 export default AboutUs;

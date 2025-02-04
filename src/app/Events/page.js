@@ -24,7 +24,7 @@ const Events = () => {
                     />
                 </div>
                 <div className="serviceContent">
-                    <h2>Event Organization & Management</h2>
+                    <h2>Event Organization &amp; Management</h2>
                     <p>
                         From weddings to corporate events, we bring your vision to life. 
                         Our team of experts will handle every detail, ensuring your event is unforgettable.
@@ -55,11 +55,11 @@ const Events = () => {
                             <h4>Testimonials:</h4>
                             <div className="testimonials">
                                 <blockquote>
-                                    "The team made our wedding day absolutely magical! Every detail was perfect, and we couldn’t have asked for more."
-                                    <cite>- Ayesha & Ali</cite>
+                                    &quot;The team made our wedding day absolutely magical! Every detail was perfect, and we couldn&apos;t have asked for more.&quot;
+                                    <cite>- Ayesha &amp; Ali</cite>
                                 </blockquote>
                                 <blockquote>
-                                    "Our corporate event was a huge success, thanks to their professionalism and attention to detail."
+                                    &quot;Our corporate event was a huge success, thanks to their professionalism and attention to detail.&quot;
                                     <cite>- Crax Corporation</cite>
                                 </blockquote>
                             </div>
@@ -115,11 +115,11 @@ const Events = () => {
                             <h4>Testimonials:</h4>
                             <div className="testimonials">
                                 <blockquote>
-                                    "The conference was flawlessly executed, and our attendees were highly impressed."
+                                    &quot;The conference was flawlessly executed, and our attendees were highly impressed.&quot;
                                     <cite>- PakTech Solutions</cite>
                                 </blockquote>
                                 <blockquote>
-                                    "Their attention to detail and professionalism made our networking event a huge success."
+                                    &quot;Their attention to detail and professionalism made our networking event a huge success.&quot;
                                     <cite>- Innovate Pakistan</cite>
                                 </blockquote>
                             </div>
@@ -170,17 +170,17 @@ const Events = () => {
                             </ol>
                             <h4>Why Choose Us?</h4>
                             <p>
-                                We are passionate about creating unforgettable weddings that reflect your unique love story. Our team is dedicated to making your day as special as you’ve always dreamed.
+                                We are passionate about creating unforgettable weddings that reflect your unique love story. Our team is dedicated to making your day as special as you&apos;ve always dreamed.
                             </p>
                             <h4>Testimonials:</h4>
                             <div className="testimonials">
                                 <blockquote>
-                                    "Our wedding was everything we dreamed of and more, thanks to their incredible planning."
-                                    <cite>- Fatima & Ahmed</cite>
+                                    &quot;Our wedding was everything we dreamed of and more, thanks to their incredible planning.&quot;
+                                    <cite>- Fatima &amp; Ahmed</cite>
                                 </blockquote>
                                 <blockquote>
-                                    "They made our destination wedding stress-free and absolutely magical."
-                                    <cite>- Zainab & Usman</cite>
+                                    &quot;They made our destination wedding stress-free and absolutely magical.&quot;
+                                    <cite>- Zainab &amp; Usman</cite>
                                 </blockquote>
                             </div>
                         </div>
@@ -235,11 +235,11 @@ const Events = () => {
                             <h4>Testimonials:</h4>
                             <div className="testimonials">
                                 <blockquote>
-                                    "The product launch was a huge success, and we couldn’t have done it without their expertise."
+                                    &quot;The product launch was a huge success, and we couldn&apos;t have done it without their expertise.&quot;
                                     <cite>- PakElectronics</cite>
                                 </blockquote>
                                 <blockquote>
-                                    "Their creative ideas and flawless execution made our launch unforgettable."
+                                    &quot;Their creative ideas and flawless execution made our launch unforgettable.&quot;
                                     <cite>- Style Pakistan</cite>
                                 </blockquote>
                             </div>

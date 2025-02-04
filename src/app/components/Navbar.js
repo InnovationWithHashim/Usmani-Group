@@ -61,8 +61,8 @@ const Navbar = () => {
                     <li><Link href="/services" onClick={handleLinkClick}>Consultancy</Link></li>
                     <li><Link href="/Umrah" onClick={handleLinkClick}>Umrah</Link></li>
                     <li><Link href="/Events" onClick={handleLinkClick}>Events</Link></li>
-                    <li><Link href="/about" onClick={handleLinkClick}>About Us</Link></li>
-                    <li><Link href="/contact" onClick={handleLinkClick}>Contact Us</Link></li>
+                    <li><Link href="/about" onClick={handleLinkClick}>About</Link></li>
+                    <li><Link href="/contact" onClick={handleLinkClick}>Contact</Link></li>
                 </ul>
             </nav>
         </section>

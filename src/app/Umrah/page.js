@@ -124,7 +124,7 @@ const UmrahTravelServices = () => {
             <div className="main-content">
                 <h2>Our Umrah Packages</h2>
                 <p>
-                    We offer a range of packages tailored to meet your needs, whether you're looking for luxury or affordability. 
+                    We offer a range of packages tailored to meet your needs, whether you&apos;re looking for luxury or affordability. 
                     Each package is designed to provide a seamless and spiritually enriching experience.
                 </p>
 
@@ -145,7 +145,7 @@ const UmrahTravelServices = () => {
                             Designed for those seeking a luxurious experience, this package includes 5-star accommodations, private transportation, 
                             and exclusive access to premium services. Enjoy a seamless journey with personalized attention and comfort.
                         </p>
-                        <h4>What’s Included?</h4>
+                        <h4>What&apos;s Included?</h4>
                         <ul>
                             <li>5-star hotels near the Haram with stunning views.</li>
                             <li>Private transportation with experienced drivers.</li>
@@ -154,7 +154,7 @@ const UmrahTravelServices = () => {
                             <li>24/7 dedicated support team.</li>
                         </ul>
                         <Link href="/contact">
-                        <button className="cta-button">Book Now</button>
+                            <button className="cta-button">Book Now</button>
                         </Link>
                     </div>
                 </div>
@@ -176,7 +176,7 @@ const UmrahTravelServices = () => {
                             Perfect for budget-conscious travelers, this package offers comfortable stays, group transportation, 
                             and all essential services at an affordable price. Experience a hassle-free pilgrimage without compromising on quality.
                         </p>
-                        <h4>What’s Included?</h4>
+                        <h4>What&apos;s Included?</h4>
                         <ul>
                             <li>3-4 star hotels near the Haram.</li>
                             <li>Group transportation with modern vehicles.</li>
@@ -185,7 +185,7 @@ const UmrahTravelServices = () => {
                             <li>24/7 customer support.</li>
                         </ul>
                         <Link href="/contact">
-                        <button className="cta-button">Book Now</button>
+                            <button className="cta-button">Book Now</button>
                         </Link>
                     </div>
                 </div>
@@ -196,8 +196,8 @@ const UmrahTravelServices = () => {
                 <h2>Ready to Embark on Your Spiritual Journey?</h2>
                 <p>Contact us today to book your Umrah package and experience a pilgrimage like no other.</p>
                 <Link href="/contact">
-  <button className="cta-button">Get in Touch</button>
-</Link>
+                    <button className="cta-button">Get in Touch</button>
+                </Link>
             </div>
         </section>
     );
